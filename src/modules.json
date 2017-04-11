@@ -1,0 +1,7 @@
+[
+	{"module": "dhcp", "label": "DHCP"},
+	{"module": "dns", "label": "DNS"},
+	{"module": "ntp", "label": "NTP"},
+	{"module": "web", "label": "Web"},
+	{"module": "syslog", "label": "Syslog"}
+]

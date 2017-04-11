@@ -1,0 +1,180 @@
+@font-face {
+	font-family: Calibri
+	src: url("fonts/calibri.ttf");
+}
+
+body {
+	margin: 0;
+	font-family: Calibri;
+	font-size: 14px;
+	-webkit-user-select: none;
+}
+
+input, textarea, keygen, select, button {
+	font-family: Calibri;
+	font-size: 14px;
+}
+
+a, h1, span, label {
+	cursor: default;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #f0f0f0;
+	width: 130px;
+}
+
+nav a {
+	display: block;
+	padding: 2px 8px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+nav a i.fa {
+	color: #ccc;
+	font-size: 10px;
+	padding-right: 4px;
+	transition: color 0.2s;
+}
+
+nav a i.fa.started {
+	color: #20a060;
+	transition: color 0.2s;
+}
+
+nav a > * {
+	vertical-align: middle;
+}
+
+nav li:hover {
+	background: #ccc;
+	transition: color 0.2s;
+}
+
+nav li.active {
+	background: white;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+section#main-content {
+	position: absolute;
+	left: 130px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+section#main-content > div {
+	padding: 20px;
+	position: absolute;
+	background: white;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	
+	overflow: hidden;
+}
+
+section#main-content header {
+    padding-bottom: 20px;
+}
+
+section#main-content h1 {
+    font-size: 28px;
+}
+
+section#main-content header button {
+	width: 32px;
+	height: 28px;
+	margin: 2px;
+}
+
+section#main-content header span {
+	font-weight: bold;
+	margin: 8px;
+}
+
+div.option-text {
+	padding: 2px;
+}
+
+.option-text label {
+	width: 120px;
+	display: inline-block;
+}
+
+.option-text input[type=text] {
+	width: 120px;
+}
+
+:target {
+	z-index: 1;
+}
+
+h1 {
+	margin: 0;
+}
+
+table {
+	margin-top: 10px;
+	border: solid 1px #ccc;
+}
+
+#syslog table {
+	width: 100%;
+	table-layout: fixed;
+	-webkit-user-select: auto;
+}
+
+table td {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+table button {
+	visibility: hidden;
+}
+
+table.editable tbody td:last-child {
+	position: absolute;
+	margin-left: 8px;
+}
+
+tr:hover button, tr button:hover {
+	visibility: visible;
+}
+
+caption {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+col.domain-name, col.record-target {
+	width: 150px;
+}
+
+col.record-type {
+	width: 100px;
+}
+
+.invalid {
+	outline-color: red;
+}
+
+td input {
+	width: 100%;
+	box-sizing: border-box;
+}

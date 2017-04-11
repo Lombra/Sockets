@@ -1,0 +1,52 @@
+<h4>Forward lookups for unknown domains</h4>
+
+<div>
+<input type="radio" id="dns-fallback-none" name="dns-fallback" value="none">
+<label for="dns-fallback-none">None</label>
+</div>
+
+<div>
+<input type="radio" id="use-system" name="dns-fallback" value="system">
+<label for="use-system">Host DNS server</label>
+</div>
+
+<div>
+<input type="radio" id="dns-use-external" name="dns-fallback" value="external" data-enables="dns-external">
+<label for="dns-use-external">External DNS server</label>
+<div>
+<label for="dns-external">External server</label>
+<input type="text" data-option="server" id="dns-external" disabled>
+</div>
+</div>
+
+<table id="dns-records" class="editable">
+<caption>Resource records</caption>
+<colgroup>
+	<col class="domain-name">
+	<col class="record-type">
+	<col class="record-target">
+</colgroup>
+<thead>
+<tr>
+	<th>Domain</th>
+	<th>Type</th>
+	<th>Target</th>
+</tr>
+</thead>
+<tbody id="dns-records-body"></tbody>
+</table>
+
+<table id="dns-records">
+<colgroup>
+	<col class="domain-name">
+	<col class="record-type">
+	<col class="record-target">
+</colgroup>
+<tr>
+	<td><input type="text" id="dns-add-record-domain"></td>
+	<td><input type="text" id="dns-add-record-type"></td>
+	<td><input type="text" id="dns-add-record-target"></td>
+</tr>
+</table>
+
+<button id="add-dns-record">Add record</button>

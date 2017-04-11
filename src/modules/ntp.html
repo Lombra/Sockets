@@ -1,0 +1,15 @@
+<div></div>
+
+<div>
+<input type="radio" id="ntp-use-system" name="time-source" value="local">
+<label for="ntp-use-system">Use system time</label>
+</div>
+
+<div>
+<input type="radio" id="ntp-use-external" name="time-source" value="external" data-enables="ntp-server">
+<label for="ntp-use-external">Use external server</label>
+<div>
+<label for="filter">External server</label>
+<input type="text" data-option="server" id="ntp-server" disabled>
+</div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "sockets",
+  "productName": "Sockets",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "connect": "^3.6.0",
+    "dhcp-mon": "^1.0.2",
+    "ip": "^1.1.5",
+    "native-dns": "^0.7.0",
+    "serve-static": "^1.12.1"
+  },
+  "devDependencies": {
+    "electron": "^1.6.2"
+  }
+}
